@@ -1,9 +1,15 @@
 // let playerSelection = prompt('Type your choice of rock, paper or scissors.');
+let playerSelection = 'Rock';
 
-let playerSelection = 'rock';
+function computerPlay() {
+  let arr = ['rock', 'paper', 'scissors'];
+
+  let random = Math.floor(Math.random() * 3);
+
+  return arr[random];
+}
 let computerSelection = computerPlay();
-
-function computerPlay() {}
+console.log(computerSelection);
 
 function playGame(playerSelection, computerSelection) {}
 
